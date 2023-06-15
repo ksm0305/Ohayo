@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>오늘 당신의 운세는?</title>
+</head>
+<body>
+    {% if error_message %}
+        <h1>{{ error_message }}</h1>
+    {% else %}
+        <h1>✨오늘 당신의 운세는?✨</h1>
+        <p>당신의 별자리: {{ constellation }}</p>
+        <p>행운의 색: {{ color }}</p>
+        <p>행운의 아이템: {{ item }}</p>
+        <p>오늘의 운세: {{ fortune }}</p>
+    {% endif %}
+</body>
+</html>
